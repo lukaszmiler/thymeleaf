@@ -22,5 +22,22 @@
     <p>Color <input type="text" th:field="*{color}"></p>
     <p><input type="submit" value="add new car"></p>
 </form>
+<br/>
+<br/>
+<br/>
+<form th:action="@{/removeCar}" th:object="${newCar}">
+    <p>ID <input type="text" th:field="*{id}"></p>
+    <p><input type="submit" value="remove new car"></p>
+</form>
+<br/>
+<br/>
+<br/>
+<form th:action="@{/modifyCar}" th:object="${newCar}" >
+    <p>ID <input type="text" th:field="*{id}"></p>
+    <p>Mark <input type="text" th:field="*{mark}"></p>
+    <p>Model <input type="text" th:field="*{model}"></p>
+    <p>Color <input type="text" th:field="*{color}"></p>
+    <p><input type="submit" value="modify car by id"></p>
+</form>
 </body>
 </html>
